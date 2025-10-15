@@ -6,7 +6,7 @@
 /*   By: jtruckse <jtruckse@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 11:25:25 by jtruckse          #+#    #+#             */
-/*   Updated: 2025/10/14 16:26:49 by jtruckse         ###   ########.fr       */
+/*   Updated: 2025/10/15 12:06:18 by jtruckse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,8 @@ size_t	ft_strlen(const char *s)
 	int	i;
 
 	i = 1;
-	while (*s != '\0')
+	while (s[i] != '\0')
 	{
-		s++;
 		i++;
 	}
 	return (i);
@@ -27,5 +26,5 @@ size_t	ft_strlen(const char *s)
 
 // int	main(void)
 // {
-// 	printf(("%zu\n"), ft_strlen("hello world"));
+// 	printf(("%ld\n"), ft_strlen("hello world"));
 // }
