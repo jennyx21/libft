@@ -6,13 +6,13 @@
 /*   By: jtruckse <jtruckse@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 17:21:56 by jtruckse          #+#    #+#             */
-/*   Updated: 2025/10/14 16:21:26 by jtruckse         ###   ########.fr       */
+/*   Updated: 2025/10/16 19:19:30 by jtruckse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include"libft.h"
+#include "libft.h"
 
-void	ft_bezero(void *s, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
 	size_t	i ;
 	char	*ptr ;
@@ -20,7 +20,7 @@ void	ft_bezero(void *s, size_t n)
 	i = 0;
 	ptr = (char *) s;
 	while (i < n)
-	{	
+	{
 		ptr [i] = '0';
 		i++;
 	}

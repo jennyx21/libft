@@ -6,15 +6,15 @@
 /*   By: jtruckse <jtruckse@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/09 14:52:39 by jtruckse          #+#    #+#             */
-/*   Updated: 2025/10/09 17:40:28 by jtruckse         ###   ########.fr       */
+/*   Updated: 2025/10/16 19:30:45 by jtruckse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_isalnum(int c)
 {
-	if ((c >= 48 && c <= 57) || (c >= 65 && c <= 90) || (c >= 97 && c <= 122))
-		return (0);
-	return (1);
+	if ((c >= '0' && c <= '9') || (c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
+		return (1);
+	return (0);
 }
 
 // #include <stdio.h>

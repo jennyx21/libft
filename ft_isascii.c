@@ -6,15 +6,15 @@
 /*   By: jtruckse <jtruckse@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/09 14:52:39 by jtruckse          #+#    #+#             */
-/*   Updated: 2025/10/09 17:48:24 by jtruckse         ###   ########.fr       */
+/*   Updated: 2025/10/16 19:31:39 by jtruckse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_isascii(int c)
 {
 	if (c >= 0 && c <= 127)
-		return (0);
-	return (1);
+		return (1);
+	return (0);
 }
 
 // #include <stdio.h>

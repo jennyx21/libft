@@ -6,11 +6,11 @@
 /*   By: jtruckse <jtruckse@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 17:11:48 by jtruckse          #+#    #+#             */
-/*   Updated: 2025/10/15 17:24:40 by jtruckse         ###   ########.fr       */
+/*   Updated: 2025/10/16 19:11:17 by jtruckse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_toupper(int c)
+int	ft_toupper(int c)
 {
 	if (c >= 'a' && c <= 'z')
 	{
