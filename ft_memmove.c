@@ -6,7 +6,7 @@
 /*   By: jtruckse <jtruckse@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 16:39:29 by jtruckse          #+#    #+#             */
-/*   Updated: 2025/10/15 20:42:22 by jtruckse         ###   ########.fr       */
+/*   Updated: 2025/10/22 21:20:59 by jtruckse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,12 +21,14 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	ptrsrc = (unsigned char *)src;
 	ptrdest = (unsigned char *)dest;
 	i = 0;
+	if (!dest && !src)
+		return (dest);
 	while (i < n)
 	{
 		if (ptrsrc < ptrdest)
 		{
-			ptrdest[n] = ptrsrc[n];
 			n--;
+			ptrdest[n] = ptrsrc[n];
 		}
 		else
 		{

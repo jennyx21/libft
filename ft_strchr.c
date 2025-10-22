@@ -6,28 +6,35 @@
 /*   By: jtruckse <jtruckse@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/18 20:46:47 by jtruckse          #+#    #+#             */
-/*   Updated: 2025/10/19 20:44:57 by jtruckse         ###   ########.fr       */
+/*   Updated: 2025/10/22 17:29:10 by jtruckse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*strchr(const char *s, int c)
+char	*ft_strchr(const char *s, int c)
 {
 	int		i;
 
 	i = 0;
 	while (s[i] != '\0')
 	{
-		if (s[i] == c)
+		if ((unsigned char)s[i] == (unsigned char)c)
 			return ((char *)&s[i]);
 		i++;
 	}
+	if ((unsigned char)c == '\0')
+		return ((char *)&s[i]);
 	return (0);
 }
 
-int	main()
-{
-	const char	*text = "es";
-	char		ch = 's';
-}
+// int main(void)
+// {
+//     const char *text = "abbbbb";
+//     char buchstabe = 'a';
+
+//     printf("or_strchr: <%s>\n", strchr(text, buchstabe));
+//     printf("ft_strchr: <%s>\n", ft_strchr(text, buchstabe));
+
+//     return 0;
+// }
