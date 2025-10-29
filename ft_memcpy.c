@@ -6,7 +6,7 @@
 /*   By: jtruckse <jtruckse@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 16:39:29 by jtruckse          #+#    #+#             */
-/*   Updated: 2025/10/17 16:57:06 by jtruckse         ###   ########.fr       */
+/*   Updated: 2025/10/28 20:34:06 by jtruckse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,10 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	char	*ptr2;
 
 	i = 0;
-	ptr = (unsigned char *)src;
-	ptr2 = (unsigned char *)dest;
+	ptr = (char *)src;
+	ptr2 = (char *)dest;
+	if (!src && !dest)
+		return (NULL);
 	while (i < n)
 	{
 		ptr2[i] = ptr[i];

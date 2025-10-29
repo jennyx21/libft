@@ -6,7 +6,7 @@
 /*   By: jtruckse <jtruckse@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/27 19:03:28 by jtruckse          #+#    #+#             */
-/*   Updated: 2025/10/27 20:30:01 by jtruckse         ###   ########.fr       */
+/*   Updated: 2025/10/29 19:06:29 by jtruckse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,28 +14,30 @@
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	char	*str;
-	size_t	len1;
-	size_t	lenset;
+	size_t	start;
+	size_t	end;
+	char	*goalstr;
 
-	len1 = ft_strlen(s1);
-	lenset = ft_strlen(set);
-	// start & end check & correct length
-	str = malloc((len1 - lenset + 1) * sizeof(char));
-	if (!str)
+	start = 0;
+	end = ft_strlen(s1);
+	if (!s1)
 		return (NULL);
-	while (len1 > 0)
-	{
-		str[len1] = s1[len1] - set[len1];
-		len1--;
-	}
-	return (str);
+	if (!set)
+		return (NULL);
+	while (s1[start] && ft_strchr(set, s1[start]))
+		start++;
+	while (end > start && ft_strchr(set, s1[end - 1]))
+		end--;
+	goalstr = ft_substr(s1, start, end - start);
+	return (goalstr);
 }
+// alternative
+// return (ft_substr(s1, start, end - start));
 
 // int	main(void)
 // {
 // 	char	*trimm;
-// 	trimm = ft_strtrim("abcabctestabcabc", "bca");
+// 	trimm = ft_strtrim("abcabc test abcabc", "bca ");
 // 	printf("%s\n", trimm);
 // }
 
