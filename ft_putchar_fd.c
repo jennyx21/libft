@@ -6,7 +6,7 @@
 /*   By: jtruckse <jtruckse@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/29 22:34:24 by jtruckse          #+#    #+#             */
-/*   Updated: 2025/10/29 22:40:37 by jtruckse         ###   ########.fr       */
+/*   Updated: 2025/10/29 23:53:51 by jtruckse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,5 @@
 
 void	ft_putchar_fd(char c, int fd)
 {
-	write(fd, &c, 1)
+	write(fd, &c, 1);
 }
