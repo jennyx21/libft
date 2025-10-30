@@ -6,7 +6,7 @@
 /*   By: jtruckse <jtruckse@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/09 14:52:39 by jtruckse          #+#    #+#             */
-/*   Updated: 2025/10/16 19:31:49 by jtruckse         ###   ########.fr       */
+/*   Updated: 2025/10/30 15:55:04 by jtruckse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,3 @@ int	ft_isprint(int c)
 		return (1);
 	return (0);
 }
-
-// #include <stdio.h>
-// int	main(void)
-// {	
-// 	int i = '.';
-// 	printf("%i\n", ft_isprint(i));
-// }

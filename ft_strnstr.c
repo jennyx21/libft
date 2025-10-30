@@ -6,7 +6,7 @@
 /*   By: jtruckse <jtruckse@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/23 13:01:02 by jtruckse          #+#    #+#             */
-/*   Updated: 2025/10/23 16:44:37 by jtruckse         ###   ########.fr       */
+/*   Updated: 2025/10/30 15:56:17 by jtruckse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,15 +34,3 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	}
 	return (0);
 }
-
-// int	main(void)
-// {
-// 	const char	*big = "Hello there, this is a simple test string.";
-// 	const char	*little = "simple";
-// 	size_t		len;
-// 	char		*result_ft;
-
-// 	len = 30;
-// 	result_ft = ft_strnstr(big, little, len);
-// 	printf("ft_strnstr found: \"%s\"\n", result_ft);
-// }

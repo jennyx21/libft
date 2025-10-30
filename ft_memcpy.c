@@ -6,7 +6,7 @@
 /*   By: jtruckse <jtruckse@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 16:39:29 by jtruckse          #+#    #+#             */
-/*   Updated: 2025/10/28 20:34:06 by jtruckse         ###   ########.fr       */
+/*   Updated: 2025/10/30 15:55:18 by jtruckse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,14 +30,3 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
-
-// int main(void)
-// {
-// 	unsigned char str[64]= "hallo welt";
-// 	const char str2[] = "wie gehts es dir?";
-// 	size_t n = strlen(str2);
-// 	printf("%s\n%s\n",  str, (const char *)str2);
-// 	ft_memcpy(str, str2, n);
-// 	printf("%s\n%s\n", str, str2);
-// 	return (0);
-// }

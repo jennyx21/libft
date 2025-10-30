@@ -6,7 +6,7 @@
 /*   By: jtruckse <jtruckse@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 11:25:25 by jtruckse          #+#    #+#             */
-/*   Updated: 2025/10/17 15:42:04 by jtruckse         ###   ########.fr       */
+/*   Updated: 2025/10/30 15:56:03 by jtruckse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,15 +36,3 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 	}
 	return (src_len);
 }
-
-// int main(void)
-// {
-// 	char strsrc[]= "hallo ";
-// 	char strdest[]= "was geht ";
-// 	 size_t n = 3; //sizeof(strdest);
-// 	printf("%s\n%s\n", strsrc, strdest);
-// 	ft_strlcpy(strdest, strsrc, n);
-// 	size_t len = ft_strlcpy(strdest, strsrc, n);
-// 	printf("src length: %zu\n", len);
-// 	printf("%s\n%s\n", strsrc, strdest);
-// }

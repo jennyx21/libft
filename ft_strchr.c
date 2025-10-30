@@ -6,7 +6,7 @@
 /*   By: jtruckse <jtruckse@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/18 20:46:47 by jtruckse          #+#    #+#             */
-/*   Updated: 2025/10/22 17:29:10 by jtruckse         ###   ########.fr       */
+/*   Updated: 2025/10/30 15:55:48 by jtruckse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	int		i;
+	int	i;
 
 	i = 0;
 	while (s[i] != '\0')
@@ -27,14 +27,3 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)&s[i]);
 	return (0);
 }
-
-// int main(void)
-// {
-//     const char *text = "abbbbb";
-//     char buchstabe = 'a';
-
-//     printf("or_strchr: <%s>\n", strchr(text, buchstabe));
-//     printf("ft_strchr: <%s>\n", ft_strchr(text, buchstabe));
-
-//     return 0;
-// }

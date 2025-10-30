@@ -6,13 +6,13 @@
 /*   By: jtruckse <jtruckse@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/28 21:09:54 by jtruckse          #+#    #+#             */
-/*   Updated: 2025/10/29 19:05:13 by jtruckse         ###   ########.fr       */
+/*   Updated: 2025/10/30 15:55:45 by jtruckse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	count_words(const char *s, char c)
+static int	count_words(const char *s, char c)
 {
 	int	count;
 	int	i;
@@ -28,7 +28,7 @@ int	count_words(const char *s, char c)
 	return (count);
 }
 
-int	word_len(const char *s, char c)
+static int	word_len(const char *s, char c)
 {
 	int	i;
 
@@ -38,7 +38,7 @@ int	word_len(const char *s, char c)
 	return (i);
 }
 
-char	**word_mallocation(char const *s, char c, char **result)
+static char	**word_mallocation(char const *s, char c, char **result)
 {
 	int	i;
 	int	j;
@@ -81,40 +81,3 @@ char	**ft_split(char const *s, char c)
 	result = word_mallocation(s, c, result);
 	return (result);
 }
-
-// int	main(void)
-// {
-// 	char	*s1;
-// 	char	**result;
-// 	int		i;
-
-// 	s1 = "this is a test string";
-// 	// char *s2 = "";
-// 	// char *s3 = "\0";
-// 	// char *s4 = "     different test    ";
-// 	// char *s5 = "    two      words     ";
-// 	result = ft_split(s1, " ");
-// 	i = 0;
-// 	while (result[i])
-// 	{
-// 		printf("%s\n", result[i]);
-// 		i++;
-// 	}
-// }
-
-/*
-
-char	**result;
-
-->{0}[w][o][r][d][1][\0]
-{1}[w][o][r][d][2][\0]
-{2}[w][o][r][d][3][\0]
-{3} [\0]
-
-result[0][0] -> w == (char)
-result[0][1] -> o
-
-result[0] -> string anfang == (char *)
-
-
-*/

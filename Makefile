@@ -42,13 +42,12 @@ SRC =	ft_atoi.c \
 		ft_tolower.c \
 		ft_toupper.c
 
-OBJ = $(SRC:.c=.o)
+OBJ = $(patsubst %.c,$(OBJDIR)/%.o,$(SRC))
 
-# --- Rules ---
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	$(AR) $(ARFLAGS) $@ $^
+	@$(AR) $(ARFLAGS) $@ $^
 	@echo "\033[1;35m"
 	@echo "██████████████████████████████████████████████████"
 	@echo "░  ░░░░░░░░        ░░       ░░░        ░░        ░"
@@ -58,21 +57,20 @@ $(NAME): $(OBJ)
 	@echo "█        ██        ██       ███  ███████████  ████"
 	@echo "██████████████████████████████████████████████████"
 	@echo "\033[0m"
-	@echo "\033[1;35m📦 Archive built successfully: \033[0m$(NAME)"
+	@echo "\033[1;35m Archive built successfully: \033[0m$(NAME)"
 
 $(OBJDIR)/%.o: %.c | $(OBJDIR)
-	@echo "🧱 Compiling $<"
-	$(CC) $(CFLAGS) -c $< -o $@
+	@$(CC) $(CFLAGS) -c $< -o $@
 
 $(OBJDIR):
 	mkdir -p $(OBJDIR)
 
 clean:
-	@echo "🧹 Removing object files..."
-	@rm -rf $(OBJ)
+	@echo "Removing object files."
+	@rm -rf $(OBJDIR)
 
 fclean: clean
-	@echo "🗑 Removing archive..."
+	@echo "Removing archive."
 	@rm -f $(NAME)
 
 re: fclean all

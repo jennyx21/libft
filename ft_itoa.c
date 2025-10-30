@@ -6,13 +6,13 @@
 /*   By: jtruckse <jtruckse@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/29 19:39:03 by jtruckse          #+#    #+#             */
-/*   Updated: 2025/10/29 21:21:55 by jtruckse         ###   ########.fr       */
+/*   Updated: 2025/10/30 15:55:08 by jtruckse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	whitch_char(long n)
+static int	whitch_char(long n)
 {
 	int	i;
 
@@ -57,8 +57,3 @@ char	*ft_itoa(int n)
 	}
 	return (result);
 }
-
-// int	main(void)
-// {
-// 	printf("%s\n", ft_itoa(1000034));
-// }

@@ -6,7 +6,7 @@
 /*   By: jtruckse <jtruckse@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/18 20:46:47 by jtruckse          #+#    #+#             */
-/*   Updated: 2025/10/22 17:26:05 by jtruckse         ###   ########.fr       */
+/*   Updated: 2025/10/30 15:56:20 by jtruckse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,14 +27,3 @@ char	*ft_strrchr(const char *s, int c)
 		return ((char *)&s[str_len]);
 	return (0);
 }
-
-// int main(void)
-// {
-//     const char *text = "abbbbb";
-//     char buchstabe = 'a';
-
-//     printf("or_strrchr: <%s>\n", strrchr(text, buchstabe));
-//     printf("ft_strrchr: <%s>\n", ft_strrchr(text, buchstabe));
-
-//     return 0;
-// }

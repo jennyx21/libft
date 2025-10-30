@@ -6,7 +6,7 @@
 /*   By: jtruckse <jtruckse@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/22 21:44:05 by jtruckse          #+#    #+#             */
-/*   Updated: 2025/10/22 22:27:46 by jtruckse         ###   ########.fr       */
+/*   Updated: 2025/10/30 15:55:15 by jtruckse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,14 +29,3 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
-
-// int main(void)
-// {
-//     const char *text = "abbbbb";
-//     char buchstabe = 'a';
-
-//     printf("or_strchr: <%s>\n", strchr(text, buchstabe));
-//     printf("ft_strchr: <%s>\n", ft_strchr(text, buchstabe));
-
-//     return 0;
-// }

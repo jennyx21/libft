@@ -6,7 +6,7 @@
 /*   By: jtruckse <jtruckse@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/29 22:50:05 by jtruckse          #+#    #+#             */
-/*   Updated: 2025/10/30 00:04:47 by jtruckse         ###   ########.fr       */
+/*   Updated: 2025/10/30 15:55:34 by jtruckse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,18 +14,23 @@
 
 void	ft_putnbr_fd(int n, int fd)
 {
-	char	*digit;
-	int		i;
+	char	digit;
 
-	i = 0;
-	digit = ft_itoa(n);
-	while (digit[i])
+	if (n == -2147483648)
+		write(fd, "-2147483648", 11);
+	else if (n < 0)
 	{
-		write(fd, &digit[i], 1);
-		i++;
+		n = -n;
+		write(fd, "-", 1);
+	}
+	if (n > 9)
+	{
+		ft_putnbr_fd(n / 10, fd);
+		ft_putnbr_fd(n % 10, fd);
+	}
+	else if (n >= 0)
+	{
+		digit = n + '0';
+		write(fd, &digit, 1);
 	}
 }
-
-// need to do it without itoa (not allowed to allocate)
-// either get it in two while loops
-// or do recursion with number / 10 and number % 10

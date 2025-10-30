@@ -6,7 +6,7 @@
 /*   By: jtruckse <jtruckse@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/23 16:53:55 by jtruckse          #+#    #+#             */
-/*   Updated: 2025/10/27 13:10:17 by jtruckse         ###   ########.fr       */
+/*   Updated: 2025/10/30 15:54:29 by jtruckse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,12 +38,3 @@ int	ft_atoi(const char *nptr)
 	}
 	return (sign * sum);
 }
-
-// #include <stdlib.h>
-
-// int	main(void)
-// {
-// 	printf("or_atoi: %d\n", atoi("\0123"));
-// 	printf("ft_atoi: %d\n", ft_atoi("\0123"));
-// 	return (0);
-// }

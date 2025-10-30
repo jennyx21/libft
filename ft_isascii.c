@@ -6,7 +6,7 @@
 /*   By: jtruckse <jtruckse@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/09 14:52:39 by jtruckse          #+#    #+#             */
-/*   Updated: 2025/10/16 19:31:39 by jtruckse         ###   ########.fr       */
+/*   Updated: 2025/10/30 15:54:58 by jtruckse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,3 @@ int	ft_isascii(int c)
 		return (1);
 	return (0);
 }
-
-// #include <stdio.h>
-// int	main(void)
-// {	
-// 	int i = '.';
-// 	printf("%i\n", ft_isascii(i));
-// }

@@ -6,7 +6,7 @@
 /*   By: jtruckse <jtruckse@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 17:11:48 by jtruckse          #+#    #+#             */
-/*   Updated: 2025/10/16 19:11:17 by jtruckse         ###   ########.fr       */
+/*   Updated: 2025/10/30 15:56:39 by jtruckse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,3 @@ int	ft_toupper(int c)
 	}
 	return (c);
 }
-// #include <stdio.h>
-// int	main(void)
-// {	
-// 	int i = '2';
-// 	printf("%c\n", ft_toupper(i));
-// }
